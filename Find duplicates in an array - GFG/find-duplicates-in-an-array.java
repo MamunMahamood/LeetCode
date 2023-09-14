@@ -31,14 +31,14 @@ class Solution {
         HashSet<Integer> a = new HashSet<>();
         HashMap<Integer, Integer> b = new HashMap<>();
         
-        for (int i = 0; i < arr.length; i++) {
-            arr[arr[i] % arr.length]
-                = arr[arr[i] % arr.length]
-                  + arr.length;
+        for (int i = 0; i < n; i++) {
+            arr[arr[i] % n]
+                = arr[arr[i] % n]
+                  + n;
         }
        
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] >= arr.length * 2) {
+        for (int i = 0; i < n; i++) {
+            if (arr[i] >= n * 2) {
                 ans.add(i);
             }
         }
