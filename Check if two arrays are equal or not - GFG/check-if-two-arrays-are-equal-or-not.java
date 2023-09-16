@@ -47,7 +47,7 @@ class Solution{
         //Your code here
         Arrays.sort(A);
         Arrays.sort(B);
-        ArrayList<Long> a = new ArrayList<>();
+        //ArrayList<Long> a = new ArrayList<>();
         
         
         for(int i =0; i<N; i++){
