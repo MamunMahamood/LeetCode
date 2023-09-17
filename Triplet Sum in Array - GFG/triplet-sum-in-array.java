@@ -40,7 +40,7 @@ class Solution
        
        Arrays.sort(A);
        
-       for(int i=0; i<n; i++){
+       for(int i=0; i<n-2; i++){
            int x = A[i];
            int l = i+1;
            int r = n-1;
