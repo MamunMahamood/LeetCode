@@ -82,7 +82,7 @@ class Solution
 	           int j = arr[i];
 	           
 	           while(s.contains(j)){
-	               s.remove(Integer.valueOf(j));
+	               s.remove(j);
 	               j++;
 	           }
 	           
