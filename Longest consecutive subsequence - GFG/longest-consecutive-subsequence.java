@@ -67,9 +67,9 @@ class Solution
 	static int findLongestConseqSubseq(int arr[], int N)
 	{
 	   // add your code here
-	   ArrayList<Integer> a = new ArrayList<>();
+	   //ArrayList<Integer> a = new ArrayList<>();
 	   HashSet<Integer> s = new HashSet<>();
-	   ArrayList<Integer> c = new ArrayList<>();
+	   //ArrayList<Integer> c = new ArrayList<>();
 	   
 	   int ans=0;
 	   
