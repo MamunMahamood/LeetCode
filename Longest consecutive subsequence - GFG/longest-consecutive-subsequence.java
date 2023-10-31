@@ -86,7 +86,7 @@ class Solution
 	               j++;
 	           }
 	           
-	           if(ans<j-arr[i]) ans=j-arr[i];
+	           ans=Math.max(ans,j-arr[i]);
 	       }
 	       
 	       
