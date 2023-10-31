@@ -37,12 +37,15 @@ class Solution
     {
         //complete the function here
         
-        int low =0;
-        int high = arr.length-1;
         
-        while(low<high){
-            if(arr[low]<arr[high]) high--;
-            else low++;
-        }return arr[low];
+        int min=Integer.MAX_VALUE;
+        
+       for(int i = 0; i<n; i++){
+            min=Math.min(min,arr[i]);
+       }
+       
+       return min;
+
+
     }
 }
