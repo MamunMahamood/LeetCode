@@ -31,14 +31,20 @@ class Solution {
     int missingNumber(int array[], int n) {
         // Your Code Here
         
-        Arrays.sort(array);
-        int m = array.length;
-        int i =0;
+        int start=1;
         
-        for(i = 0; i<m; i++){
-            if((i+1)!=array[i]) break;
+        HashSet<Integer> ans = new HashSet<>();
+        
+        for(int i=0; i<n-1; i++){
+            ans.add(array[i]);
         }
         
-        return i+1;
+        while(ans.contains(start)){
+            start++;
+        }
+        
+        return start;
+        
+      
     }
 }
